@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+	<ModInfo>
+		<Name value="LG Fletching Set"/>
+		<Description value="Adds fletchings to the game and adds them as a component to all arrow and crossbow bolt recipes" />
+		<Author value="Lord Gothic" />
+		<Version value="1.0" />
+	</ModInfo>
+</xml>

@@ -1,0 +1,10 @@
+<mod>
+	<info>
+		<author>Lord Gothic</author>
+		<name>LG Fletching Set</name>
+		<description>Adds a Fletching Set to the game and adds them as a component to all arrow and crossbow bolt recipes</description>
+		<mod_version>1.0</mod_version>
+		<game_version>20.2 B2</game_version>
+		<launcher_version>0.7.3</launcher_version>
+	</info>
+</mod>

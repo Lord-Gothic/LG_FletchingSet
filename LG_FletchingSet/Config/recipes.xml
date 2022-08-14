@@ -1,0 +1,182 @@
+<configs>
+
+	<!-- Start remove current arrow recipes -->
+	<remove xpath="/recipes/recipe[@name='ammoArrowFlaming']"/>
+	<remove xpath="/recipes/recipe[@name='ammoBundleArrowFlaming']"/>
+	<remove xpath="/recipes/recipe[@name='ammoArrowExploding']"/>
+	<remove xpath="/recipes/recipe[@name='ammoBundleArrowExploding']"/>
+	<remove xpath="/recipes/recipe[@name='ammoArrowIron']"/>
+	<remove xpath="/recipes/recipe[@name='ammoBundleArrowIron']"/>
+	<remove xpath="/recipes/recipe[@name='ammoArrowSteelAP']"/>
+	<remove xpath="/recipes/recipe[@name='ammoBundleArrowSteelAP']"/>
+	<remove xpath="/recipes/recipe[@name='ammoArrowStone']"/>
+	<remove xpath="/recipes/recipe[@name='ammoBundleArrowStone']"/>
+	<remove xpath="/recipes/recipe[@name='ammoCrossbowBoltFlaming']"/>
+	<remove xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltFlaming']"/>
+	<remove xpath="/recipes/recipe[@name='ammoCrossbowBoltExploding']"/>
+	<remove xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltExploding']"/>
+	<remove xpath="/recipes/recipe[@name='ammoCrossbowBoltIron']"/>
+	<remove xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltIron']"/>
+	<remove xpath="/recipes/recipe[@name='ammoCrossbowBoltSteelAP']"/>
+	<remove xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltSteelAP']"/>
+	<remove xpath="/recipes/recipe[@name='ammoCrossbowBoltStone']"/>
+	<remove xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltStone']"/>
+	<!-- End Remove current arrow recipes-->
+	
+	<!-- Start Add in the Fletching recipies and the new arrow recipies -->
+	<append xpath="/recipes">
+	
+		<!-- Start for all the differnt ways to make fletchings -->
+			
+			<recipe name="resourceFletchingSet_LG" count="1">
+				<ingredient name="resourceFeather" count="1"/>
+			</recipe>
+			
+			<recipe name="resourceFletchingSet_LG" count="3">
+				<ingredient name="resourceScrapPolymers" count="1"/>
+			</recipe>
+			
+			<recipe name="resourceFletchingSet_LG" count="5">
+				<ingredient name="resourceCloth" count="1"/>
+			</recipe>
+			
+			<recipe name="resourceFletchingSet_LG" count="10">
+				<ingredient name="resourceDuctTape" count="1"/>
+			</recipe>
+
+		<!-- End of Fletching Recipes-->
+
+		
+		
+		<!-- Add recipes that use the new fletching Item -->		
+				
+			<recipe name="ammoArrowFlaming" count="1" craft_time="12" craft_area="workbench" tags="learnable,workbenchCrafting">
+				<ingredient name="resourceArrowHeadSteelAP" count="1"/>
+				<ingredient name="resourceFletchingSet_LG" count="1"/>
+				<ingredient name="resourceGunPowder" count="2"/>
+				<ingredient name="resourceCloth" count="1"/>
+				<ingredient name="resourceAnimalFat" count="1"/>
+			</recipe>
+
+			<recipe name="ammoBundleArrowFlaming" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+				<ingredient name="resourceArrowHeadSteelAP" count="80"/>
+				<ingredient name="resourceFletchingSet_LG" count="80"/>
+				<ingredient name="resourceGunPowder" count="160"/>
+				<ingredient name="resourceCloth" count="80"/>
+				<ingredient name="resourceAnimalFat" count="80"/>
+			</recipe>
+
+			<recipe name="ammoArrowExploding" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+				<ingredient name="resourceArrowHeadSteelAP" count="1"/>
+				<ingredient name="resourceFletchingSet_LG" count="1"/>
+				<ingredient name="resourceGunPowder" count="6"/>
+				<ingredient name="resourceDuctTape" count="1"/>
+			</recipe>
+
+			<recipe name="ammoBundleArrowExploding" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+				<ingredient name="resourceArrowHeadSteelAP" count="60"/>
+				<ingredient name="resourceFletchingSet_LG" count="60"/>
+				<ingredient name="resourceGunPowder" count="360"/>
+				<ingredient name="resourceDuctTape" count="60"/>
+			</recipe>
+
+			<recipe name="ammoArrowIron" count="1">
+				<ingredient name="resourceArrowHeadIron" count="1"/>
+				<ingredient name="resourceWood" count="1"/>
+				<ingredient name="resourceFletchingSet_LG" count="1"/>
+			</recipe>
+
+			<recipe name="ammoBundleArrowIron" count="1" craft_time="240" tags="learnable">
+				<ingredient name="resourceArrowHeadIron" count="80"/>
+				<ingredient name="resourceWood" count="80"/>
+				<ingredient name="resourceFletchingSet_LG" count="80"/>
+			</recipe>
+
+			<recipe name="ammoArrowSteelAP" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+				<ingredient name="resourceArrowHeadSteelAP" count="1"/>
+				<ingredient name="resourceFletchingSet_LG" count="1"/>
+			</recipe>
+
+			<recipe name="ammoBundleArrowSteelAP" count="1" craft_time="240" craft_area="workbench" tags="learnable,workbenchCrafting">
+				<ingredient name="resourceArrowHeadSteelAP" count="80"/>
+				<ingredient name="resourceFletchingSet_LG" count="80"/>
+			</recipe>
+
+			<recipe name="ammoArrowStone" count="1">
+				<ingredient name="resourceRockSmall" count="1"/>
+				<ingredient name="resourceWood" count="1"/>
+				<ingredient name="resourceFletchingSet_LG" count="1"/>
+			</recipe>
+
+			<recipe name="ammoBundleArrowStone" count="1" craft_time="240" tags="learnable">
+				<ingredient name="resourceRockSmall" count="80"/>
+				<ingredient name="resourceWood" count="80"/>
+				<ingredient name="resourceFletchingSet_LG" count="80"/>
+			</recipe>
+
+			<recipe name="ammoCrossbowBoltFlaming" count="1" craft_time="14" craft_area="workbench" tags="learnable,workbenchCrafting">
+				<ingredient name="resourceArrowHeadSteelAP" count="1"/>
+				<ingredient name="resourceFletchingSet_LG" count="1"/>
+				<ingredient name="resourceGunPowder" count="2"/>
+				<ingredient name="resourceCloth" count="1"/>
+				<ingredient name="resourceAnimalFat" count="1"/>
+			</recipe>
+
+			<recipe name="ammoBundleCrossbowBoltFlaming" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+				<ingredient name="resourceArrowHeadSteelAP" count="80"/>
+				<ingredient name="resourceFletchingSet_LG" count="80"/>
+				<ingredient name="resourceGunPowder" count="160"/>
+				<ingredient name="resourceCloth" count="80"/>
+				<ingredient name="resourceAnimalFat" count="80"/>
+			</recipe>
+
+			<recipe name="ammoCrossbowBoltExploding" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+				<ingredient name="resourceArrowHeadSteelAP" count="1"/>
+				<ingredient name="resourceFletchingSet_LG" count="1"/>
+				<ingredient name="resourceGunPowder" count="8"/>
+				<ingredient name="resourceDuctTape" count="1"/>
+			</recipe>
+
+			<recipe name="ammoBundleCrossbowBoltExploding" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+				<ingredient name="resourceArrowHeadSteelAP" count="60"/>
+				<ingredient name="resourceFletchingSet_LG" count="60"/>
+				<ingredient name="resourceGunPowder" count="480"/>
+				<ingredient name="resourceDuctTape" count="60"/>
+			</recipe>
+
+			<recipe name="ammoCrossbowBoltIron" count="1">
+				<ingredient name="resourceArrowHeadIron" count="1"/>
+				<ingredient name="resourceWood" count="1"/>
+				<ingredient name="resourceFletchingSet_LG" count="1"/>
+			</recipe>
+
+			<recipe name="ammoBundleCrossbowBoltIron" count="1" craft_time="240" tags="learnable">
+				<ingredient name="resourceArrowHeadIron" count="80"/>
+				<ingredient name="resourceWood" count="80"/>
+				<ingredient name="resourceFletchingSet_LG" count="80"/>
+			</recipe>
+
+			<recipe name="ammoCrossbowBoltSteelAP" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+				<ingredient name="resourceArrowHeadSteelAP" count="1"/>
+				<ingredient name="resourceFletchingSet_LG" count="1"/>
+			</recipe>
+
+			<recipe name="ammoBundleCrossbowBoltSteelAP" count="1" craft_time="240" craft_area="workbench" tags="learnable,workbenchCrafting">
+				<ingredient name="resourceArrowHeadSteelAP" count="80"/>
+				<ingredient name="resourceFletchingSet_LG" count="80"/>
+			</recipe>
+
+			<recipe name="ammoCrossbowBoltStone" count="1">
+				<ingredient name="resourceRockSmall" count="1"/>
+				<ingredient name="resourceWood" count="1"/>
+				<ingredient name="resourceFletchingSet_LG" count="1"/>
+			</recipe>
+
+			<recipe name="ammoBundleCrossbowBoltStone" count="1" craft_time="240" tags="learnable">
+				<ingredient name="resourceRockSmall" count="80"/>
+				<ingredient name="resourceWood" count="80"/>
+				<ingredient name="resourceFletchingSet_LG" count="80"/>
+			</recipe>
+	</append>
+	<!-- End adding new recipes -->
+</configs>

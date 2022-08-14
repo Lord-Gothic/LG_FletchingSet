@@ -1,0 +1,16 @@
+<configs>
+	<append xpath="/items">
+		<!-- Adds Generic FletchingSet Item for use in Arrow and Bolt recipies -->
+		<item name="resourceFletchingSet_LG">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="Stacknumber" value="250"/> <!-- STK resource -->
+			<property name="Weight" value="1"/>
+			<property name="EconomicValue" value="5"/>
+			<property name="EconomicBundleSize" value="50"/>
+			<property name="Group" value="Resources"/>
+		</item>
+	</append>
+</configs>

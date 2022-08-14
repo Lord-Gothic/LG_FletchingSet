@@ -1,0 +1,4 @@
+Key,File,Type,UseInMainMenu,NoTranslate,english
+
+resourceFletchingSet_LG,Items,Resource,,,"Fletching Set"
+resourceFletchingSet_LGDesc,Items,Resource,,,"Fletchings are used for in-flight stability of an arrow or crossbow bolt, these look a bit worse for the wear but should do the job"
